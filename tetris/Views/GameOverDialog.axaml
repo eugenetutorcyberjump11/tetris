@@ -9,6 +9,6 @@
 		<TextBlock Text="Game Over" FontSize="24"
 				   HorizontalAlignment="Center"/>
 		<Button Content="Ok" Width="75" HorizontalAlignment="Center"
-				ClickMode="OkButton_Click"/>
+				Click="OkButton_Click"/>
 	</StackPanel>
 </Window>

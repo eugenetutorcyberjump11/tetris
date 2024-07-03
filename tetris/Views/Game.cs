@@ -11,7 +11,7 @@ namespace tetris.Views
     {
         private readonly Canvas _gameCanvas;
         private Tetromino _currentTetromino;
-        private readonly List<Rectangle> _placedBlocks;
+        private readonly List<Rectangle> _placedBlocks; 
         private const int Rows = 20;
         private const int Columns = 10;
         private const int BlockSize = 30;
@@ -221,7 +221,7 @@ namespace tetris.Views
         private async void ShowGameOverDialog()
         {
             var dialog = new GameOverDialog();
-            await dialog.ShowDialog((Window)_gameCanvas.GetVisualRoot);
+            await dialog.ShowDialog((Window)_gameCanvas.GetVisualRoot());
         }
     }
 }
